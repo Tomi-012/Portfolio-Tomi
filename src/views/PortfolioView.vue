@@ -23,6 +23,24 @@ export default {
           github: 'https://github.com/Tomi-012',
           demo: 'https://joki.masrori.my.id/'
         },
+        {
+          id: 3,
+          name: 'Website PT.Cipta Hospital',
+          imageUrl: 'https://masrori.my.id/fto_tmi/PT.Cipta%20Hospital.png',
+          status: 'I created this website to promote PT. Cipta Hospital, in terms of services, etc. and this is to complete a project for a college assignment.',
+          tech: 'HTML, CSS, JavaScript',
+          github: 'null',
+          demo: 'https://web-rs-pt-citra-hospital.vercel.app/'
+        },
+        {
+          id: 3,
+          name: 'Website Portofolio v2',
+          imageUrl: 'https://masrori.my.id/fto_tmi/portofolio-v2.png',
+          status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
+          tech: 'HTML, CSS, TypeCsript, JavaScript',
+          github: 'https://github.com/Tomi-012',
+          demo: 'https://portofolio-tomi-v2.vercel.app/'
+        },
       ]
     };
   }
