@@ -30,7 +30,7 @@ export default {
           status: 'I created this website to promote PT. Cipta Hospital, in terms of services, etc. and this is to complete a project for a college assignment.',
           tech: 'HTML, CSS, JavaScript',
           github: 'null',
-          demo: 'https://web-rs-pt-citra-hospital.vercel.app/'
+          demo: 'https://web-rs-pt-cipta-hospital.vercel.app/'
         },
         {
           id: 3,
