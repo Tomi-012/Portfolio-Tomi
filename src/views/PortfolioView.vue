@@ -79,6 +79,15 @@ export default {
         },
         {
           id: 9,
+          name: 'Perpustakaan Digital',
+          imageUrl: '/img/perpustakaan.png',
+          status: 'Digital library management system for organizing and managing book collections with modern interface.',
+          tech: 'Web Development',
+          github: 'https://github.com/Tomi-012',
+          demo: 'https://perpus.masrori.my.id/'
+        },
+        {
+          id: 10,
           name: 'Traffic RNN',
           imageUrl: '/img/trafic-rnn_e-learning-unpam.png',
           status: 'Traffic prediction application using Recurrent Neural Network (RNN) for intelligent traffic analysis.',
@@ -87,7 +96,7 @@ export default {
           demo: 'https://traffic-rnn.vercel.app/'
         },
         {
-          id: 10,
+          id: 11,
           name: 'Website PT.Cipta Hospital',
           imageUrl: 'https://masrori.my.id/fto_tmi/PT.Cipta%20Hospital.png',
           status: 'I created this website to promote PT. Cipta Hospital, in terms of services, etc. and this is to complete a project for a college assignment.',
