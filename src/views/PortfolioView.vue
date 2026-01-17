@@ -10,16 +10,16 @@ export default {
           name: 'Personal Website',
           imageUrl: 'https://masrori.my.id/fto_tmi/Portfolio_Tomi.png',
           status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
-          tech: 'VueJS 3, Tailwind',
+          tech: 'VueJS, HTML, CSS, javaScript',
           github: 'https://github.com/Tomi-012',
-          demo: ''
+          demo: 'https://portfolio-tomi.vercel.app/'
         },
         {
           id: 2,
           name: 'Website Portofolio V2',
           imageUrl: 'https://masrori.my.id/fto_tmi/portofolio-v2.png',
           status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
-          tech: 'HTML, CSS, TypeScript, JavaScript',
+          tech: 'React, Vite, Tailwind CSS',
           github: 'https://github.com/Tomi-012',
           demo: 'https://portofolio-tomi-v2.vercel.app/'
         },
@@ -28,7 +28,7 @@ export default {
           name: 'Website Portofolio V3',
           imageUrl: 'https://masrori.my.id/fto_tmi/Portofolio-tema-raiden.png',
           status: 'Latest version of my personal portfolio website with modern design and enhanced user experience.',
-          tech: 'React, Vite, Tailwind CSS',
+          tech: 'React, Vite, Tailwind CSS, TypeScript',
           github: 'https://github.com/Tomi-012',
           demo: 'https://portofolio-tomi-v3-ei.vercel.app'
         },
@@ -46,7 +46,7 @@ export default {
           name: 'Website Shiraori Joki V2',
           imageUrl: '/img/web-jasa-joki-v2.png',
           status: 'Second version of Shiraori Joki website with improved design and features for game account services.',
-          tech: 'React, Tailwind CSS',
+          tech: 'React, Next.js, Tailwind CSS, TypeScript',
           github: 'https://github.com/Tomi-012',
           demo: 'https://web-shiraori-joki-v2.vercel.app/#testimoni'
         },
@@ -55,7 +55,7 @@ export default {
           name: 'Project PKM',
           imageUrl: '/img/project-pkm.png',
           status: 'PKM (Program Kreativitas Mahasiswa) project website showcasing student creativity and innovation.',
-          tech: 'Next.js, Tailwind CSS',
+          tech: 'React, Next.js, Tailwind CSS, TypeScript',
           github: 'https://github.com/Tomi-012',
           demo: 'https://project-pkm.vercel.app/'
         },
@@ -64,7 +64,7 @@ export default {
           name: 'Dashboard E-Commerce',
           imageUrl: 'https://masrori.my.id/fto_tmi/Sumber%20Segar%20Dashboard.png',
           status: 'E-commerce dashboard for managing fresh products with complete features for inventory, sales, and reporting.',
-          tech: 'React, Next.JS, Tailwind CSS',
+          tech: 'React, Next.JS, TypeScript, Tailwind CSS',
           github: 'https://github.com/Tomi-012',
           demo: 'https://sumber-segar.com'
         },
@@ -73,7 +73,7 @@ export default {
           name: 'Lumichan AI',
           imageUrl: '/img/lumichan-ai.png',
           status: 'AI-powered chatbot application with intelligent conversation capabilities and modern user interface.',
-          tech: 'Next.js, Tailwind CSS, AI API',
+          tech: 'React, Next.js, Tailwind CSS, JavaScript, Emotion, AI API',
           github: 'https://github.com/Tomi-012',
           demo: 'https://lumichan-ai.masrori.my.id/'
         },
@@ -82,7 +82,7 @@ export default {
           name: 'Perpustakaan Digital',
           imageUrl: '/img/perpustakaan.png',
           status: 'Digital library management system for organizing and managing book collections with modern interface.',
-          tech: 'Web Development',
+          tech: 'React, Next.js, TypeScript, Tailwind CSS,',
           github: 'https://github.com/Tomi-012',
           demo: 'https://perpus.masrori.my.id/'
         },
@@ -91,18 +91,36 @@ export default {
           name: 'Traffic RNN',
           imageUrl: '/img/trafic-rnn_e-learning-unpam.png',
           status: 'Traffic prediction application using Recurrent Neural Network (RNN) for intelligent traffic analysis.',
-          tech: 'Python, TensorFlow, RNN',
+          tech: 'Python, TensorFlow, RNN, React, Vite, Tailwind CSS',
           github: 'https://github.com/Tomi-012',
           demo: 'https://traffic-rnn.vercel.app/'
         },
         {
           id: 11,
+          name: 'SawitMart',
+          imageUrl: '/img/sawitmart.png',
+          status: 'Web application developed using Angular and Golang with SawitDB.',
+          tech: 'Angular, HTML, Golang, SawitDB, Typescript, Tailwind CSS',
+          github: 'https://github.com/Tomi-012',
+          demo: 'https://sawitmart.masrori.my.id/'
+        },
+        {
+          id: 12,
           name: 'Website PT.Cipta Hospital',
           imageUrl: 'https://masrori.my.id/fto_tmi/PT.Cipta%20Hospital.png',
           status: 'I created this website to promote PT. Cipta Hospital, in terms of services, etc. and this is to complete a project for a college assignment.',
-          tech: 'HTML, CSS, JavaScript',
+          tech: 'HTML, CSS, JavaScript, Bootstrap',
           github: 'https://github.com/Tomi-012',
           demo: 'https://web-rs-pt-cipta-hospital.vercel.app/'
+        },
+        {
+          id: 13,
+          name: 'Login Register',
+          imageUrl: '/img/login-register.png',
+          status: 'A responsive Login & Register interface implementation.',
+          tech: 'HTML, JavaScript, PHP, Tailwind CSS',
+          github: 'https://github.com/Tomi-012',
+          demo: 'https://login-register-seven-gules.vercel.app/'
         },
       ]
     };
