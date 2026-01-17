@@ -39,7 +39,7 @@ export default {
           status: 'This website is created to offer game account maintenance services: daily login, leveling, and weekly events. Safe, fast, and reliable.',
           tech: 'Genshin Impact, Honkai Star Rail',
           github: 'https://github.com/Tomi-012',
-          demo: 'https://joki.masrori.my.id/'
+          demo: 'https://list-joki.vercel.app/'
         },
         {
           id: 5,
