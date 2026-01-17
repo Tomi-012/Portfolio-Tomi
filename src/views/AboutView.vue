@@ -51,6 +51,36 @@ export default {
           name: 'ReactJS',
           imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
           status: 'Beginner'
+        },
+        {
+          id: 9,
+          name: 'Angular',
+          imageUrl: 'https://angular.io/assets/images/logos/angular/angular.svg',
+          status: 'Beginner'
+        },
+        {
+          id: 10,
+          name: 'Vue.js',
+          imageUrl: 'https://vuejs.org/images/logo.png',
+          status: 'Intermediate'
+        },
+        {
+          id: 11,
+          name: 'Next.js',
+          imageUrl: 'https://cdn.worldvectorlogo.com/logos/next-js.svg',
+          status: 'Intermediate'
+        },
+        {
+          id: 12,
+          name: 'Vite',
+          imageUrl: 'https://vitejs.dev/logo.svg',
+          status: 'Intermediate'
+        },
+        {
+          id: 13,
+          name: 'Golang',
+          imageUrl: 'https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png',
+          status: 'Beginner'
         }
       ],
       tools: [
@@ -76,6 +106,18 @@ export default {
           id: 4,
           name: 'MySQL',
           imageUrl: 'https://cdn-icons-png.flaticon.com/512/5968/5968313.png',
+          status: 'Database'
+        },
+        {
+          id: 5,
+          name: 'PostgreSQL',
+          imageUrl: 'https://cdn.iconscout.com/icon/free/png-256/free-postgresql-11-1175122.png',
+          status: 'Database'
+        },
+        {
+          id: 6,
+          name: 'SawitDB',
+          imageUrl: '/sawitdb.jpg',
           status: 'Database'
         },
       ]
