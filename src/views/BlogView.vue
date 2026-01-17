@@ -161,6 +161,7 @@ export default {
 
 <style scoped>
 .paraf {
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
