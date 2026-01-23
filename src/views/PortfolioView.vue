@@ -1,129 +1,140 @@
-[media pointer="file-service://file-1Bo1Ec5TGvr7DJg4uggiff"]
 <script>
+import { useI18n } from '../composables/useI18n';
+import { computed } from 'vue';
+
 export default {
-  data() {
-    return {
-      activeTab: 1,
-      items: [
+  setup() {
+    const { t } = useI18n();
+    const items = computed(() => [
         {
           id: 1,
-          name: 'Personal Website',
+          name: t('projects.personal_website.name'),
           imageUrl: 'https://masrori.my.id/fto_tmi/Portfolio_Tomi.png',
-          status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
+          status: t('projects.personal_website.status'),
           tech: 'VueJS, HTML, CSS, javaScript',
           github: 'https://github.com/Tomi-012',
           demo: 'https://portfolio-tomi.vercel.app/'
         },
         {
           id: 2,
-          name: 'Website Portofolio V2',
+          name: t('projects.portfolio_v2.name'),
           imageUrl: 'https://masrori.my.id/fto_tmi/portofolio-v2.png',
-          status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
+          status: t('projects.portfolio_v2.status'),
           tech: 'React, Vite, Tailwind CSS',
           github: 'https://github.com/Tomi-012',
           demo: 'https://portofolio-tomi-v2.vercel.app/'
         },
         {
           id: 3,
-          name: 'Website Portofolio V3',
+          name: t('projects.portfolio_v3.name'),
           imageUrl: 'https://masrori.my.id/fto_tmi/Portofolio-tema-raiden.png',
-          status: 'Latest version of my personal portfolio website with modern design and enhanced user experience.',
+          status: t('projects.portfolio_v3.status'),
           tech: 'React, Vite, Tailwind CSS, TypeScript',
           github: 'https://github.com/Tomi-012',
           demo: 'https://portofolio-tomi-v3-ei.vercel.app'
         },
         {
           id: 4,
-          name: 'Website List Joki',
+          name: t('projects.list_joki.name'),
           imageUrl: 'https://masrori.my.id/fto_tmi/List_Joki.png',
-          status: 'This website is created to offer game account maintenance services: daily login, leveling, and weekly events. Safe, fast, and reliable.',
+          status: t('projects.list_joki.status'),
           tech: 'Genshin Impact, Honkai Star Rail',
           github: 'https://github.com/Tomi-012',
           demo: 'https://list-joki.vercel.app/'
         },
         {
           id: 5,
-          name: 'Website Shiraori Joki V2',
+          name: t('projects.shiraori_joki.name'),
           imageUrl: '/img/web-jasa-joki-v2.png',
-          status: 'Second version of Shiraori Joki website with improved design and features for game account services.',
+          status: t('projects.shiraori_joki.status'),
           tech: 'React, Next.js, Tailwind CSS, TypeScript',
           github: 'https://github.com/Tomi-012',
           demo: 'https://web-shiraori-joki-v2.vercel.app/#testimoni'
         },
         {
           id: 6,
-          name: 'Project PKM',
+          name: t('projects.project_pkm.name'),
           imageUrl: '/img/project-pkm.png',
-          status: 'PKM (Program Kreativitas Mahasiswa) project website showcasing student creativity and innovation.',
+          status: t('projects.project_pkm.status'),
           tech: 'React, Next.js, Tailwind CSS, TypeScript',
           github: 'https://github.com/Tomi-012',
           demo: 'https://project-pkm.vercel.app/'
         },
         {
           id: 7,
-          name: 'Dashboard E-Commerce',
+          name: t('projects.dashboard_ecommerce.name'),
           imageUrl: 'https://masrori.my.id/fto_tmi/Sumber%20Segar%20Dashboard.png',
-          status: 'E-commerce dashboard for managing fresh products with complete features for inventory, sales, and reporting.',
+          status: t('projects.dashboard_ecommerce.status'),
           tech: 'React, Next.JS, TypeScript, Tailwind CSS',
           github: 'https://github.com/Tomi-012',
           demo: 'https://sumber-segar.com'
         },
         {
           id: 8,
-          name: 'Lumichan AI',
+          name: t('projects.lumichan_ai.name'),
           imageUrl: '/img/lumichan-ai.png',
-          status: 'AI-powered chatbot application with intelligent conversation capabilities and modern user interface.',
+          status: t('projects.lumichan_ai.status'),
           tech: 'React, Next.js, Tailwind CSS, JavaScript, Emotion, AI API',
           github: 'https://github.com/Tomi-012',
           demo: 'https://lumichan-ai.masrori.my.id/'
         },
         {
           id: 9,
-          name: 'Perpustakaan Digital',
+          name: t('projects.perpustakaan.name'),
           imageUrl: '/img/perpustakaan.png',
-          status: 'Digital library management system for organizing and managing book collections with modern interface.',
+          status: t('projects.perpustakaan.status'),
           tech: 'React, Next.js, TypeScript, Tailwind CSS,',
           github: 'https://github.com/Tomi-012',
           demo: 'https://perpus.masrori.my.id/'
         },
         {
           id: 10,
-          name: 'Traffic RNN',
+          name: t('projects.traffic_rnn.name'),
           imageUrl: '/img/trafic-rnn_e-learning-unpam.png',
-          status: 'Traffic prediction application using Recurrent Neural Network (RNN) for intelligent traffic analysis.',
+          status: t('projects.traffic_rnn.status'),
           tech: 'Python, TensorFlow, RNN, React, Vite, Tailwind CSS',
           github: 'https://github.com/Tomi-012',
           demo: 'https://traffic-rnn.vercel.app/'
         },
         {
           id: 11,
-          name: 'SawitMart',
+          name: t('projects.sawitmart.name'),
           imageUrl: '/img/sawitmart.png',
-          status: 'Web application developed using Angular and Golang with SawitDB.',
+          status: t('projects.sawitmart.status'),
           tech: 'Angular, HTML, Golang, SawitDB, Typescript, Tailwind CSS',
           github: 'https://github.com/Tomi-012',
           demo: 'https://sawitmart.masrori.my.id/'
         },
         {
+          id: 14,
+          name: t('projects.parfume_lux.name'),
+          imageUrl: '/img/parfume_lux.png',
+          status: t('projects.parfume_lux.status'),
+          tech: 'PHP, MySQL, Tailwind CSS, javaScript',
+          github: 'https://github.com/Tomi-012',
+          demo: 'https://parfume-lux.masrori.my.id/'
+        },
+        {
           id: 12,
-          name: 'Website PT.Cipta Hospital',
+          name: t('projects.cipta_hospital.name'),
           imageUrl: 'https://masrori.my.id/fto_tmi/PT.Cipta%20Hospital.png',
-          status: 'I created this website to promote PT. Cipta Hospital, in terms of services, etc. and this is to complete a project for a college assignment.',
+          status: t('projects.cipta_hospital.status'),
           tech: 'HTML, CSS, JavaScript, Bootstrap',
           github: 'https://github.com/Tomi-012',
           demo: 'https://web-rs-pt-cipta-hospital.vercel.app/'
         },
         {
           id: 13,
-          name: 'Login Register',
+          name: t('projects.login_register.name'),
           imageUrl: '/img/login-register.png',
-          status: 'A responsive Login & Register interface implementation.',
+          status: t('projects.login_register.status'),
           tech: 'HTML, JavaScript, PHP, Tailwind CSS',
           github: 'https://github.com/Tomi-012',
           demo: 'https://login-register-seven-gules.vercel.app/'
         },
-      ]
-    };
+    ]);
+
+    return { items, t };
   }
 }
 </script>
@@ -134,9 +145,9 @@ export default {
         <div
           class="text-2xl font-bold text-white mb-10 fadein-bot title-section flex items-center justify-center flex-col">
           <!-- <div class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate"></div> -->
-          <h4>Past Project Experience</h4>
+          <h4>{{ t('portfolio.title') }}</h4>
           <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-amber-300">
-            Explore the projects I've worked on so far</h4>
+            {{ t('portfolio.subtitle') }}</h4>
         </div>
       </header>
       <section>
@@ -161,7 +172,7 @@ export default {
                     <div class="flex cursor-pointer items-end gap-2 text-primary">
                       <a v-if="item.github !== 'null'"
                         :href="item.github" target="_blank" rel="noreferrer"
-                        title="View github repository" class="transition-all hover:text-accent">
+                        :title="t('portfolio.view_github')" class="transition-all hover:text-accent">
                         <svg stroke="currentColor"
                           fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
                           height="16" width="16" xmlns="http://www.w3.org/2000/svg">
@@ -170,7 +181,7 @@ export default {
                           </path>
                         </svg></a>
                         <a v-if="item.demo !== 'null'" :href="item.demo" target="_blank" rel="noreferrer"
-                        title="View finished project" class="transition-all hover:text-accent">
+                        :title="t('portfolio.view_project')" class="transition-all hover:text-accent">
                         <svg stroke="currentColor"
                           fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"
                           height="18" width="18" xmlns="http://www.w3.org/2000/svg">
@@ -183,10 +194,10 @@ export default {
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </article>
-</div></template>
+        </div>
+      </section>
+    </article>
+  </div></template>
 
 <style>
 .item-card:hover {

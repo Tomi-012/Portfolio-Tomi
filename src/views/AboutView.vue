@@ -1,5 +1,11 @@
 <script>
+import { useI18n } from '../composables/useI18n';
+
 export default {
+  setup() {
+    const { t } = useI18n();
+    return { t };
+  },
   data() {
     return {
       activeTab: 1,
@@ -132,7 +138,7 @@ export default {
 
       <header>
         <div class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center">
-          About Me &nbsp;
+          {{ t('about.title') }} &nbsp;
           <div class="h-[1px] w-32 bg-amber-200 md:w-96 aos-init aos-animate" data-aos="zoom-in-left"
             data-aos-duration="600"></div>
         </div>
@@ -146,14 +152,10 @@ export default {
         </div>
         <div class="md:w-7/12">
           <p class="mb-3 md:mb-7 fadein-left fadeins-1">
-            &nbsp; &nbsp; &nbsp; Hi, my name is Ilham Bustomi, a student at Pamulang University and a professional vendor specializing in online game services. 
-            I really love the world of games and digital services, and I see every project not just as a business task, but as a creative process that combines functionality, 
-            reliability, and aesthetic value.
+            &nbsp; &nbsp; &nbsp; {{ t('about.description_1') }}
           </p>
           <p class="mb-3 fadein-left fadeins-2">
-            &nbsp; &nbsp; &nbsp; I aim to provide services that are not only efficient and reliable but also leave a strong and positive impression. 
-            Whether it is in-game assistance, digital goods, or other related services, I strive to provide solutions that meet your needs with a personal and professional touch. 
-            If you are interested in working together, please feel free to contact me through the information provided.
+            &nbsp; &nbsp; &nbsp; {{ t('about.description_2') }}
           </p>
         </div>
 
@@ -168,7 +170,7 @@ export default {
         <div class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center">
           <div class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate" data-aos="zoom-in-left"
             data-aos-duration="600"></div>
-          &nbsp; Skills
+          &nbsp; {{ t('about.skills') }}
         </div>
       </header>
       <section>
@@ -176,11 +178,11 @@ export default {
           <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mb-5">
             <li class="mr-2">
               <button class="inline-block px-4 py-3 rounded-lg hover:text-white"
-                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 1 }" @click="activeTab = 1">Tech Stack</button>
+                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 1 }" @click="activeTab = 1">{{ t('about.tech_stack') }}</button>
             </li>
             <li class="mr-2">
               <button class="inline-block px-4 py-3 rounded-lg hover:text-white"
-                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 2 }" @click="activeTab = 2">Tools</button>
+                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 2 }" @click="activeTab = 2">{{ t('about.tools') }}</button>
             </li>
           </ul>
         </div>
