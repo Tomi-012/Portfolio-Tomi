@@ -1,7 +1,7 @@
 import { ref, watch } from 'vue';
 import translations from '../locales/translations.js';
 
-const defaultLocale = 'id';
+const defaultLocale = 'en';
 const savedLocale = localStorage.getItem('user-locale');
 const locale = ref(savedLocale && translations[savedLocale] ? savedLocale : defaultLocale);
 
